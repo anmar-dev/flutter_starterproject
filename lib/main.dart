@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.lightBlue[400],
         accentColor: Colors.cyan[300],
         // Define the default font family.
-        fontFamily: 'Roboto',
+        //fontFamily: 'Roboto',
         // Define the default TextTheme. Use this to specify the default
         // text styling for headlines, titles, bodies of text, and more.
         textTheme: TextTheme(
@@ -98,7 +98,14 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              'This is Google Fonts',
+              // Making use of Google FOnt Package
+              style: GoogleFonts.lato(
+                textStyle: Theme.of(context).textTheme.display1,
+                fontSize: 48,
+                fontWeight: FontWeight.w700,
+                fontStyle: FontStyle.italic,
+              ),
             ),
             Text(
               '$_counter',
